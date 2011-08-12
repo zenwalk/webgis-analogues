@@ -1,14 +1,13 @@
-#summary Analogue.
-#labels Phase-Requirements
+#summary Welcome to Analogue.
 
 = Introduction =
 
-Esta es una prueba...
+This a Test ...
 
 
 = Details =
 
-A traves de esta pagina ustes encontrara informacion sobre:
+A traves de esta pagina usted encontrara informacion sobre:
   * Estructura del Sistema *Analogue* or _WebGIS Analogue_
   * Procedimiento de Instalacion
   * Usando el Software
