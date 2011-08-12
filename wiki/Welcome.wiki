@@ -1,0 +1,14 @@
+#summary Analogue.
+#labels Phase-Requirements
+
+= Introduction =
+
+Esta es una prueba...
+
+
+= Details =
+
+A traves de esta pagina ustes encontrara informacion sobre:
+  * Estructura del Sistema *Analogue* or _WebGIS Analogue_
+  * Procedimiento de Instalacion
+  * Usando el Software
