@@ -1,4 +1,5 @@
 #summary Using Analogues with R
+<wiki:toc max_depth="3" />
 
 =Using Analogues with R=
 

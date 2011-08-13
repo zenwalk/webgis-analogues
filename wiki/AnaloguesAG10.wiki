@@ -1,4 +1,4 @@
-<wiki:toc max_depth="3" />
 #summary ArcToolbox for ArcGIS 10.x
+<wiki:toc max_depth="3" />
 
 =ArcToolbox for ArcGIS 10.x=
