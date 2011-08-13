@@ -1,0 +1,7 @@
+﻿#summary Como usar Analogues en línea 
+
+=Como usar Analogues en línea =
+
+
+-----
+|| [http://code.google.com/p/webgis-analogues/wiki/HowtoUseAnaloguesWeb?wl=en English ] || [http://code.google.com/p/webgis-analogues/wiki/HowtoUseAnaloguesWeb?wl=es Español] ||  

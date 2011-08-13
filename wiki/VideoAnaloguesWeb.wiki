@@ -1,0 +1,7 @@
+#summary Video tutorial Web Analogues 
+
+=Video tutorial Web Analogues=
+
+
+-----
+|| [http://code.google.com/p/webgis-analogues/wiki/VideoAnaloguesWeb?wl=en English ] || [http://code.google.com/p/webgis-analogues/wiki/VideoAnaloguesWeb?wl=es Español] ||  

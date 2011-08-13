@@ -1,0 +1,259 @@
+#summary Command Reference
+
+=Command Reference=
+
+ *analogues::createParameters*
+
+Initiate parameters for analogue dissimilarity analysis. An object of !AnalogueParameters
+
+  This function is the first step too find analogue climate sites. 
+  Here all parameters for the later analysis are set. The initial parameters can be changed later. 
+  Make sure clmate data are name properly.
+
+Example
+
+{{{
+ccafs_params <- createParams(x, z, )
+}}}
+
+
+==Functions==
+
+|| applyThreshold || Apply thresholding to araster... ||
+|| ccafsMPoints	|| Calculate ccafs dissimilarity between points with climate information... ||
+|| ccafsMPointsPercentDiff || Calculate ccafs dissimilarity between points with climate information... ||
+|| createParameters || Initiate parameters for analogue dissimilarity analysis. ||
+|| cropInteractive || Crop raster to a region of intrest... ||
+|| dissimilarity || Computes distance between one reference point and one other points... ||
+|| loadData || Load data for the dissimilarity calculations... ||
+|| loadDataGRASS || Extract reference values from rasters... ||
+|| loadGridsFromFiles || Load seperate grids... ||
+|| loadWeights || Load weights for grids... ||
+|| loadWeightsGRASS || Load weights from GRASS... ||
+|| madMPoints || Method after Hallegatte... ||
+|| mrdMPoints || Method after Hallegatte... ||
+|| radMPoints || Method after Hallegatte... ||
+|| report || Create a report... ||
+|| summariseRuns || Create a report... ||
+
+
+===applyThreshold===
+
+Description : Apply thresholding to araster
+
+Usage:
+
+{{{
+applyThreshold(results, range=NA, best=NA)
+}}}
+
+Arguments:
+
+|| r || RasterLayer or RasterStack ||
+|| range || if threshold should be applied to a range ||
+|| best || probablity values at which threshold should be cut ||
+
+===ccafsMPoints===
+
+Description: Calculate ccafs dissimilarity between points with climate information
+
+Usage:
+
+{{{
+ccafsMPoints(ref.t, poi.t, ref.w, poi.w, z=2)
+}}}
+
+Arguments:
+
+*ref.t*:	 vector with values of vars at reference point
+*poi.t*:	 matrix with values of vars at poi
+*ref.w*:	 vector with values of weights at reference point
+*poi.w*:	 matrix with values of weights at poi
+*z*:	 number parameter (default 2, equal to euclidean distance)
+
+===ccafsMPointsPercentDiff===
+
+Description: Calculate ccafs dissimilarity between points with climate information... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===createParameters===
+
+Description: Initiate parameters for analogue dissimilarity analysis. 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===cropInteractive===
+
+Description: Crop raster to a region of intrest... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===dissimilarity===
+
+Description: Computes distance between one reference point and one other points... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===loadData===
+
+Description: Load data for the dissimilarity calculations... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===loadDataGRASS===
+
+Description: Extract reference values from rasters... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===loadGridsFromFiles===
+
+Description: Load seperate grids... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===loadWeights===
+
+Description: Load weights for grids... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===loadWeightsGRASS===
+
+Description: Load weights from GRASS... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===madMPoints===
+
+Description: Method after Hallegatte... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===mrdMPoints===
+
+Description: Method after Hallegatte... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===radMPoints===
+
+Description: Method after Hallegatte... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===report===
+
+Description: Create a report... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+
+===summariseRuns===
+
+Description: Create a report... 
+
+Usage:
+
+{{{
+
+}}}
+
+Arguments:
+ 
+ 
+ 
+
+---------------
+|| [http://code.google.com/p/webgis-analogues/wiki/CommandReference?wl=es Español] ||

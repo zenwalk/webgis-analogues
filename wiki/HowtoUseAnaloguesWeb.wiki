@@ -1,0 +1,7 @@
+﻿#summary How to Use Analogues on the web
+
+=How to Use Analogues on the web=
+
+
+-----
+|| [http://code.google.com/p/webgis-analogues/wiki/HowtoUseAnaloguesWeb?wl=en English ] || [http://code.google.com/p/webgis-analogues/wiki/HowtoUseAnaloguesWeb?wl=es Español] ||  
