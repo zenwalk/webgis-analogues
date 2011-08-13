@@ -150,7 +150,7 @@ _You can find more details and updated information at http://code.google.com/p/c
 
 -------------------------
 
-|| [https://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=es Español] ||
+|| [http://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=es Español] ||
 
 
 <g:plusone size="medium"></g:plusone>

@@ -18,4 +18,4 @@
 
 
 
-|| [https://code.google.com/p/webgis-analogues/wiki/TableOfContents?wl=es Español] ||
+|| [http://code.google.com/p/webgis-analogues/wiki/Overview?wl=es Español] ||

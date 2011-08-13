@@ -14,4 +14,4 @@
   * [References Referencias]
 
   
-|| [https://code.google.com/p/webgis-analogues/wiki/TableOfContents?wl=en English ] ||
+|| [http://code.google.com/p/webgis-analogues/wiki/Overview?wl=en English ] ||

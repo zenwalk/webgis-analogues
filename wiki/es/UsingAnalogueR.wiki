@@ -6,4 +6,4 @@
 http://code.google.com/p/ccafs-analogues/wiki/Tutorial1.wiki
 
 ---------------
-|| [https://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=en English] ||
+|| [http://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=en English] ||
