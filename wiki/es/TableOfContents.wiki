@@ -1,4 +1,4 @@
-#summary Table of Content.
+#summary Table of Contents.
 <wiki:toc max_depth="10" />
 * [Overview Introduccion]
   * [Standalone Usando Analogues como aplicacion independiente]

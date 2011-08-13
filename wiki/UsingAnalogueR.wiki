@@ -1,9 +1,8 @@
-#summary Using Analogues with R
-<wiki:toc max_depth="3" />
+﻿#summary Using Analogues with R
 
 =Using Analogues with R=
-
 ==Looking for analogues sites==
+
 
 *Start R and load the Analogues packages*
 
@@ -141,11 +140,17 @@ In order to export dissimilarities as a grid, we can make use of the writeRaster
 writeRaster(res1_sum, filename="res1_sum.asc", format="ascii")
 }}}
 
+e.g. Showing the results in ArcMap
+https://code.google.com/p/webgis-analogues/trunk/images/ARCGIS_ImportASCII.jpg
+
+
 *More information*
 
 _You can find more details and updated information at http://code.google.com/p/ccafs-analogues/wiki _
 
 -------------------------
 
-|| [https://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=es Espa�ol] ||
+|| [https://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=es Español] ||
 
+
+<g:plusone size="medium"></g:plusone>
