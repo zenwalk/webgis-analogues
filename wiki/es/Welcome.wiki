@@ -11,3 +11,6 @@ A traves de esta pagina ustes encontrara informacion sobre:
   * Estructura del Sistema *Analogue* or _WebGIS Analogue_
   * Procedimiento de Instalacion
   * Usando el Software
+ 
+------
+|| [http://code.google.com/p/webgis-analogues/wiki/Welcome?wl=en English ] ||  <g:plusone size="medium"></g:plusone>

@@ -1,6 +1,7 @@
-﻿#summary Table of Content.
+﻿#summary Table of Contents.
 <wiki:toc max_depth="3" />
-* [Overview Overview]
+* [TableOfContents Table of Contents]
+  * [Overview Overview]
   * [Standalone Using stand-alone Analogues application]
     * [RequirementsR System Requirements]
     * [InstallationAnalogueR Installation]
@@ -13,9 +14,4 @@
   * [FAQs Frequently Asked Questions]
   * [References References]
 
-
-
-
-
-
-|| [http://code.google.com/p/webgis-analogues/wiki/Overview?wl=es Español] ||
+|| [http://code.google.com/p/webgis-analogues/wiki/TableOfContents?wl=es Español] ||
