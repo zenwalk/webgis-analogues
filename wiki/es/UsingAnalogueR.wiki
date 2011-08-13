@@ -1,0 +1,8 @@
+#summary Usando Analogues con R
+
+=Usando Analogues con R=
+
+http://code.google.com/p/ccafs-analogues/wiki/Tutorial1.wiki
+
+---------------
+|| [https://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=en English] ||

@@ -1,0 +1,4 @@
+#summary Analogues ArcToolbox para ArcGIS 10.x
+
+=Analogues ArcToolbox para ArcGIS 10.x=
+

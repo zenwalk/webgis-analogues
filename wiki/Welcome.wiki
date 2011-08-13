@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This a Test ...
+An R package to find climate analogues between a reference site and a number of other sites or a raster, within current or future climate.
 
 
 = Details =

@@ -1,0 +1,150 @@
+#summary Using Analogues with R
+
+=Using Analogues with R=
+
+==Looking for analogues sites==
+
+*Start R and load the Analogues packages*
+
+{{{
+library(analogues)
+}}}
+
+*Initialise a model*
+
+We always need to set some parameters for each model. To do this, we make use of the createParameters() function.
+
+{{{
+params <- createParameters(x=10,   
+  y=48, 
+  to=NA,                       
+  method="ccafs",                
+  hal.rad=c(NA,0.15),                    
+  hal.mad=c(NA,0.3),            
+  hal.mrd=c(1,NA),           
+  z=2,
+  gcms=c("current", "a1b_2020_2049_miroc3_2_hires", "a1b_2020_2049_gfdl_cm2_1"),
+  vars=c("tmean", "prec"),        
+  weights=c("dtr",1),
+  ndivisions=12,                  
+  climate.data="current_a1b_2030",              
+  ext=".asc",
+  direction="backwd",             
+  growing.season=c(8:12,1:2),           
+  across.year=T,
+  keep.lag=F,
+  normalise=F)
+}}}
+
+|| *Arguments* || *Description* ||
+|| x || Coordinate of site under analysis ||
+|| y || Coodrinate of site under analysis ||
+|| to || Coordinates for which dissimilarity should be caluclated as matrix with. A matrix with two columns: x and y. If is set to NA dissimilarities are calculated for the whole grid. ||
+|| method || Select the method that is going to be use, either ccafs or hallegate ||
+|| hal_rad || Maximum tolerable relative annual difference for hellegate method. A vector of length(vars), if thre is a var that should not be considered, substitute the number with NA. ||
+|| hal_mad || Maximum tollerable difference in annual precipitation. A vector of length(vars), if thre is a var that should not be considered, substitute the number with NA. ||
+|| hal_mrd ||    Mean absolute difference between months difference. A vector of length(vars), if thre is a var that should not be considered, substitute the number with NA. ||
+|| hal_ncond || Specify how many of the above condition need to be true ||
+|| screnario || Specify the SRES (e.g. A1B, A2..) ||
+|| gcms || Which gcm model should be used (e.g. bccr_bcm2_0,cccma_cgcm3_1_t47) ||
+|| year || Specify the year for which the dissimilarity should be calculated ||
+|| vars || Specify which variables are being used in the calculation (e.g. tmean, precipitation) ||
+|| weights || Specify how the variables are weighted. This can either be a rasterLayer or a single number. Provide a list with the name of the raster or a value for weighting. ||
+|| ndivision || Define how many devision the variables have per year (e.g. _for monthly data use 12_). ||
+|| climate_data || Define directory where the climate data is located ||
+|| ext || Extension of raster format (must be supported by gdal) ||
+|| direction || Which direction should the dissimilarity be calculated. Available options are forward, backward and current. ||
+|| growing_season || Define the growing season of the crop that is to be modelled. ||
+|| accross_year || Should the analogue method be looked accross years (i.e. should time lag be used to account for differences in seasons ||
+|| normalise || Should the rasater be normalised to a mean of 0 and sd of 1 when being loaded. ||
+|| keep_lag	 ||  Specify whether or not grids for each lag should be kept expressions evaluated in the context of df and then fed to order ||
+|| hal.rad || Maximum tolerable relative annual difference for hellegate method. A vector of length(vars), if variables should not be considered, substitute the number with NA. ||
+|| hal.mad || Maximum tollerable difference in annual precipitation. A vector of length(vars), if variables should not be considered, substitute the number with NA. ||
+|| hal.mrd || Mean absolute difference between months difference. A vector of length(vars), if variables should not be considered, substitute the number with NA. ||
+|| hal.ncond || Specify how many of the above condition need to be true in order that a sites is similiar. ||
+|| accross.year || Should the analogue method be looked accross years (i.e. should time lag be used to account for differences in seasons ||
+|| keepllag	|| Specify whether or not grids for each lag should be kept ||
+|| z || Exponent for ccafs dissimilarity, default is 2. ||
+
+  The meaning of each arguments is not discussed in more details here. To get more information about each argument use ?createParameters.
+  Or you can visit the [http://code.google.com/p/ccafs-analogues analogue package website]
+
+*Load Data*
+Once we created an object holding all parameters, here we called it params, we can load the required data. We will create to more variables. The first one called training will hold all the rasters required to train the model. In our case these are mean temperature and precipitation. And a second variable called weights storing weights for each variable.
+
+{{{
+training <- loadData(params)
+weights <- loadWeights(params)
+}}}
+
+*Looking for dissimilarities*
+
+Finally we can calculate global dissimilarities and store the list in res1
+
+{{{
+res1 <- dissimilarity(params,training, weights)
+}}}
+
+*Looking for dissimilarities using Hallegates method*
+
+If we just want want to start from a different point, use a different growing season or method, we can change that accordingly within the parameters object. Here we want to calculate the same analysis, but with Hallegates method.
+
+{{{
+params$method <- "hal"
+res2 <- dissimilarity(params,training, weights)
+}}}
+
+*Structure of results*
+
+The dissimilarity function returns a list of RasterLayers or RasterBricks. We can inspect the results by:
+
+{{{
+> res1
+[[1]]
+class       : RasterBrick 
+dimensions  : 300, 720, 1  (nrow, ncol, nlayers)
+resolution  : 0.5, 0.5  (x, y)
+extent      : -180, 180, -60, 90  (xmin, xmax, ymin, ymax)
+projection  : NA 
+values      : in memory
+min values  : 16 
+max values  : 2088 
+
+
+[[2]]
+class       : RasterBrick 
+dimensions  : 300, 720, 1  (nrow, ncol, nlayers)
+resolution  : 0.5, 0.5  (x, y)
+extent      : -180, 180, -60, 90  (xmin, xmax, ymin, ymax)
+projection  : NA 
+values      : in memory
+min values  : 18 
+max values  : 2052 
+}}}
+
+Since we used current climate, two future gcms and as a method backward, each of the two elements of res1 are the dissimilarities between our site and the two future gcms. That means, the lower the value in a raster cell is, the more similar is the current climate of this cell to our cells future climate.
+
+*Summarising results*
+
+To summarise the results over the two gcms we make use of the summariseRuns() function.
+
+{{{
+res1_sum <- summariseRuns(res1)
+}}}
+
+*Export an ESRI ascii Grid for further use in any GIS*
+
+In order to export dissimilarities as a grid, we can make use of the writeRaster function of the raster package.
+
+{{{
+writeRaster(res1_sum, filename="res1_sum.asc", format="ascii")
+}}}
+
+*More information*
+
+_You can find more details and updated information at http://code.google.com/p/ccafs-analogues/wiki _
+
+-------------------------
+
+|| [https://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR?wl=es Español] ||
+

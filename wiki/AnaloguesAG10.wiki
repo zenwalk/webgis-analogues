@@ -1,3 +1,4 @@
-<wiki:toc max_depth="1" />
+<wiki:toc max_depth="3" />
+#summary ArcToolbox for ArcGIS 10.x
 
-Esta es una prueba de TOC
+=ArcToolbox for ArcGIS 10.x=
