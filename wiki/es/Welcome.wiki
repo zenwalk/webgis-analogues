@@ -1,10 +1,11 @@
 #summary Bienvenido a Analogue.
+#sidebar TableOfContents
 
 = Introduccion =
 
 Esta es una prueba...
 
-= Details =
+= Detalles =
 
 A traves de esta pagina ustes encontrara informacion sobre:
   * Estructura del Sistema *Analogue* or _WebGIS Analogue_
