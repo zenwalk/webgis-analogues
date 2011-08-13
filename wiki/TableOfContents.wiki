@@ -1,4 +1,4 @@
-#summary Table of Content.
+﻿#summary Table of Content.
 <wiki:toc max_depth="3" />
 * [Overview Overview]
   * [Standalone Using stand-alone Analogues application]
@@ -14,4 +14,8 @@
   * [References References]
 
 
-|| [https://code.google.com/p/webgis-analogues/wiki/TableOfContents?wl=es Espa�ol] ||
+
+
+
+
+|| [https://code.google.com/p/webgis-analogues/wiki/TableOfContents?wl=es Español] ||

@@ -1,9 +1,9 @@
-#summary Table of Contents.
+﻿#summary Tabla de Contenido.
 <wiki:toc max_depth="10" />
-* [Overview Introduccion]
-  * [Standalone Usando Analogues como aplicacion independiente]
+* [Overview Introducción]
+  * [Standalone Usando Analogues como aplicación independiente]
     * [RequirementsR Requerimientos del Sistema]
-    * [InstallationAnalogueR Instalacion de Analogues]
+    * [InstallationAnalogueR Instalación de Analogues]
     * [UsingAnalogueR Usando Analogues con R]
     * [CaseStudiesR Casos de Estudio]
   * [AnaloguesArcGIS Usando Analogues con ArcGIS]

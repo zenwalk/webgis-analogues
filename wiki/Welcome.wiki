@@ -1,4 +1,4 @@
-#summary Welcome to Analogue.
+﻿#summary Welcome to Analogue.
 #sidebar TableOfContents
 
 = Introduction =

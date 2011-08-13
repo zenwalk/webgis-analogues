@@ -1,4 +1,4 @@
-#summary Usando Analogues con R
+﻿#summary Usando Analogues con R
 <wiki:toc max_depth="3" />
 
 =Usando Analogues con R=
