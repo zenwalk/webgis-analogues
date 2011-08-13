@@ -70,6 +70,7 @@ params <- createParameters(x=10,
   Or you can visit the [http://code.google.com/p/ccafs-analogues analogue package website]
 
 *Load Data*
+
 Once we created an object holding all parameters, here we called it params, we can load the required data. We will create to more variables. The first one called training will hold all the rasters required to train the model. In our case these are mean temperature and precipitation. And a second variable called weights storing weights for each variable.
 
 {{{
@@ -79,7 +80,7 @@ weights <- loadWeights(params)
 
 *Looking for dissimilarities*
 
-Finally we can calculate global dissimilarities and store the list in res1
+Finally we can calculate global dissimilarities and store the list in `res1`
 
 {{{
 res1 <- dissimilarity(params,training, weights)
@@ -96,7 +97,7 @@ res2 <- dissimilarity(params,training, weights)
 
 *Structure of results*
 
-The dissimilarity function returns a list of RasterLayers or RasterBricks. We can inspect the results by:
+The dissimilarity function returns a list of !RasterLayers or !RasterBricks. We can inspect the results by:
 
 {{{
 > res1
@@ -140,9 +141,10 @@ In order to export dissimilarities as a grid, we can make use of the writeRaster
 writeRaster(res1_sum, filename="res1_sum.asc", format="ascii")
 }}}
 
-e.g. Showing the results in ArcMap
-https://code.google.com/p/webgis-analogues/trunk/images/ARCGIS_ImportASCII.jpg
-
+<wiki:comment>
+e.g. Showing the results in !ArcMap
+http://code.google.com/p/webgis-analogues/trunk/images/ARCGIS_ImportASCII.jpg
+</wiki:comment>
 
 *More information*
 
