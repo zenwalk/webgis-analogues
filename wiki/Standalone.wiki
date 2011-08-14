@@ -107,11 +107,14 @@ download directly and get de [http://en.wikipedia.org/wiki/Md5sum md5sum].
 
 Current binary versions of R run on Windows XP or later, including on 64-bit versions. The last version known to run on Windows 2000 was 2.12.2.
 
+{{{
   We have only tested on versions of Windows currently supported by Microsoft, mainly 32-bit Windows 7 and 64-bit Windows Server 2008.
+}}}
 
-  Installation is via the installer R-2.13.1-win.exe. Just double-click on the icon and follow the instructions. 
-  When installing on a 64-bit version of Windows the options will include 32- or 64-bit versions of R (and the default is to install both). 
-  You can uninstall R from the Control Panel or from the (optional) R program group on the Start Menu.
+Installation is via the installer R-2.13.1-win.exe. Just double-click on the icon and follow the instructions. 
+When installing on a 64-bit version of Windows the options will include 32- or 64-bit versions of R (and the default is to install both). 
+You can uninstall R from the Control Panel or from the (optional) R program group on the Start Menu.
+
 
 Double-click over the _R-2.13.1-win.exe_ file and follow the steps.
 
