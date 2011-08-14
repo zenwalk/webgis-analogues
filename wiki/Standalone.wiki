@@ -79,9 +79,10 @@ For details information about which machines are supported by R, please review
  * _2 GB RAM_
  * _60GB + 1GB Swap file hard disk space_
  * _DirectX 9.0c compatible video card_
- 
-   _*R and Analogue plus dependences packages you need 104 Mb aprox. and for Climate data you must have 1.43 GB of free space.*_
 
+{{{
+   _*R and Analogue plus dependences packages you need 104 Mb aprox. and for Climate data you must have 1.43 GB of free space.*_
+}}}
 
 ==Obtaining and Installing R for Windows==
 
@@ -121,6 +122,7 @@ Double-click over the _R-2.13.1-win.exe_ file and follow the steps.
 [http://cran.r-project.org/bin/windows/base/rw-FAQ.html R for Windows FAQ]
 
 
+====
  
 
 -----------------
