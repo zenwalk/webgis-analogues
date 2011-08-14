@@ -65,11 +65,11 @@ ccafsMPoints(ref.t, poi.t, ref.w, poi.w, z=2)
 
 Parametros:
 
-*ref.t*:	 vector with values of vars at reference point
-*poi.t*:	 matrix with values of vars at poi
-*ref.w*:	 vector with values of weights at reference point
-*poi.w*:	 matrix with values of weights at poi
-*z*:	 number parameter (default 2, equal to euclidean distance)
+*ref.t*: vector with values of vars at reference point
+*poi.t*: matrix with values of vars at poi
+*ref.w*: vector with values of weights at reference point
+*poi.w*: matrix with values of weights at poi
+*z*: number parameter (default 2, equal to euclidean distance)
 
 ===ccafsMPointsPercentDiff===
 

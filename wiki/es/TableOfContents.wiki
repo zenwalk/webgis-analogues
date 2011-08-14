@@ -9,7 +9,7 @@
     * [RequirementsR Requerimientos del Sistema]
     * [InstallationAnalogueR Instalación de Analogues]
     * [UsingAnalogueR Usando Analogues con R]
-	* [CommandReference Referencia de Comandos]
+    * [CommandReference Referencia de Comandos]
   * [AnaloguesArcGIS Usando Analogues con ArcGIS]
     * [AnaloguesAG93 Analogues ArcToolbox para ArcGIS 9.3.x]
     * [AnaloguesAG10 Analogues ArcToolbox para ArcGIS 10.x]
@@ -17,4 +17,4 @@
   * [FAQs Preguntas Frecuentes]
   * [References Referencias]
 
-|| [http://code.google.com/p/webgis-analogues/wiki/TableOfContents?wl=en English] ||
+|| [http://code.google.com/p/webgis-analogues/wiki/TableOfContents English] ||

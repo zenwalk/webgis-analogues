@@ -14,4 +14,5 @@ A traves de esta pagina usted encontrara informacion sobre:
   * Usando el Software
   
 ------
-|| [http://code.google.com/p/webgis-analogues/wiki/Welcome?wl=es Español] ||      <g:plusone size="medium"></g:plusone>
+|| [http://code.google.com/p/webgis-analogues/wiki/Welcome?wl=es Español] ||
+<g:plusone size="medium"></g:plusone>

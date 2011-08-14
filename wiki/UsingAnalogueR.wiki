@@ -1,6 +1,13 @@
 ﻿#summary Using Analogues with R
 
 =Using Analogues with R=
+
+First of all you need to have the following software installed on your machine:
+ * R
+ * Analogues
+ * Additional Libraries (
+
+
 ==Looking for analogues sites==
 
 
