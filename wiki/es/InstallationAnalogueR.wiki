@@ -1,4 +1,0 @@
-﻿#summary Instalación de Analogues
-
-=Instalación de Analogues=
-

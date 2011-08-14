@@ -1,3 +1,0 @@
-﻿#summary Requerimientos del Sistema
-
-=Requerimientos del Sistema=
