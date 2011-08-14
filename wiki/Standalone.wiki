@@ -5,7 +5,7 @@
 If you are interested in running analogues tool in your own PC without conection to the internet, you can follow the next steps. 
 Please note that all of the comments and pictures were generated using R for Windows.
 
-*What is R?*
+====What is R?====
 
 R is a system for statistical computation and graphics. It consists of a language plus a run-time environment with graphics, a debugger, 
 access to certain system functions, and the ability to run programs stored in script files.
@@ -13,7 +13,7 @@ access to certain system functions, and the ability to run programs stored in sc
 R has a home page at http://www.R-project.org/. It is free software distributed under a GNU-style copyleft, 
 and an official part of the GNU project ('GNU S').
 
-*What is Analogues?*
+====What is Analogues?====
 
 Analogues is an R package to find climate analogues between a reference site and a number of other sites or a raster, within current or future climate.
 Analogues packages 0.0.5 was built using R version 2.12.1 (_under Unix/Ubuntu OS_), it was developed by Josh Hooker, Julian Ramirez and Johannes Signer from CIAT.
@@ -80,15 +80,14 @@ For details information about which machines are supported by R, please review
  * _60GB + 1GB Swap file hard disk space_
  * _DirectX 9.0c compatible video card_
 
-{{{
    _*R and Analogue plus dependences packages you need 104 Mb aprox. and for Climate data you must have 1.43 GB of free space.*_
-}}}
+
 
 ==Obtaining and Installing R for Windows==
 
 The following guide use Microsoft Windows 7 as a default operaring system.
 
-*Obtaining R*
+===Obtaining R===
 
 Go to any CRAN site using your favorite web browser (see http://cran.r-project.org/mirrors.html for a list), and choose a location close to you to minimize network load.
 Once you are in _the Comprehensive R Archive Network_ page, click on [http://cran.icesi.edu.co/CRAN/bin/windows/ Download R for Windows], then select base link
@@ -104,7 +103,7 @@ download directly and get de [http://en.wikipedia.org/wiki/Md5sum md5sum].
  _CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R._
 
  
-*Installing R for Windows*
+===Installing R for Windows===
 
 Current binary versions of R run on Windows XP or later, including on 64-bit versions. The last version known to run on Windows 2000 was 2.12.2.
 
@@ -122,8 +121,36 @@ Double-click over the _R-2.13.1-win.exe_ file and follow the steps.
 [http://cran.r-project.org/bin/windows/base/rw-FAQ.html R for Windows FAQ]
 
 
-====
+==Obtaining and Installing Analogues for Windows==
+
+===Obtaining Analogues package===
+
+
+
+===Installing Analogues package===
+
+There are two simple way to install Analogues package for R.
+
+The first one is using the following command in R:
+
+{{{
+install.packages("analogues_x.x.x.zip", repos="NULL")
+}}}
+
+The second one is using R windows interface as follow:
+
+ # Select XXXXXXX from the Main menu
+ # Click on XXXXXXXXX
+ # Select the downloaded zip file
+ # That's it!
+
+If you have any problems installing this package please go to the Analogues package home page.
+
+
+==Using Analogues with R==
  
+Check out your R and Analogue installation using Basic Tutorials at [http://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR Using Analogues with R]
+
 
 -----------------
 || [http://code.google.com/p/webgis-analogues/wiki/Standalone?wl=es Español] ||
