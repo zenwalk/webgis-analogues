@@ -43,31 +43,25 @@ Built: R 2.12.1; ; 2011-08-04 15:27:19 UTC; unix
 }}}
 
 
-It contains more than 15 functions to allow users to calculate similarity of climate sites
+It contains more than 10 functions to allow users to calculate similarity of climate sites. Some of the main functions are:
 
-_Some of the main functions are:_
+  # _Apply thresholding to araster_
+  # _Calculate ccafs dissimilarity between points with climate information_
+  # _Initiate parameters for analogue dissimilarity analysis_
+  # _Crop raster to a region of intrest_
+  # _Computes distance between one reference point and one other points_
+  # _Load data for the dissimilarity calculations_
+  # _Extract reference values from rasters_
+  # _Load seperate grids_
+  # _Load weights for grids_
+  # _Load weights from GRASS_
+  # _Hallegatte Method_
+  # _Create a report_
 
-  # Apply thresholding to araster
-  # Calculate ccafs dissimilarity between points with climate information
-  # Calculate ccafs dissimilarity between points with climate information
-  # Initiate parameters for analogue dissimilarity analysis
-  # Crop raster to a region of intrest
-  # Computes distance between one reference point and one other points
-  # Load data for the dissimilarity calculations
-  # Extract reference values from rasters
-  # Load seperate grids
-  # Load weights for grids
-  # Load weights from GRASS
-  # Method after Hallegatte
-  # Method after Hallegatte
-  # Method after Hallegatte
-  # Create a report
- 
- 
 
 ==System Requirements==
 
-Analogues runs under R environment, it means, that it could run on almost all current operaring system as follow:
+Analogues runs under R environment, it means, that it could run on almost all current operaring systems as follow:
 
  * Mcrosoft Windows 
  * UNIX platforms and similar systems (including FreeBSD and Linux)
@@ -75,20 +69,21 @@ Analogues runs under R environment, it means, that it could run on almost all cu
 
 R is being developed for the Unix-like, Windows and Mac families of operating systems. Support for Mac OS Classic ended with R 1.7.1.
 
-For details information about which machines are supported by R 
-[http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-machines-does-R-run-on_003f What machines does R run on?]
+For details information about which machines are supported by R, please review 
+[http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-machines-does-R-run-on_003f What machines does R run on?] article.
 
-The steps on this guide was tested using:
- * Microsoft Windows 7 (32 bit)
- * Core 2 Duo at 2.0 GHz
- * 2 GB RAM
- * 60GB + 1GB Swap file hard disk space
- * DirectX 9.0c compatible video card.
+
+*The steps in this document were tested using:*
+ * _Microsoft Windows 7 (32 bit)_
+ * _Core 2 Duo at 2.0 GHz_
+ * _2 GB RAM_
+ * _60GB + 1GB Swap file hard disk space_
+ * _DirectX 9.0c compatible video card_
  
-  _*R and Analogue plus dependences packages you need 104 Mb aprox. and for Climate data you must have 1.43 GB of free space.*_
+   _*R and Analogue plus dependences packages you need 104 Mb aprox. and for Climate data you must have 1.43 GB of free space.*_
 
 
-===Obtaining and Installing R for Windows===
+==Obtaining and Installing R for Windows==
 
 The following guide use Microsoft Windows 7 as a default operaring system.
 

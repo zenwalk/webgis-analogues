@@ -1,3 +1,11 @@
 ﻿#summary Referencias
 
 =Referencias=
+
+*R Development Core Team (2011)*. R: A language and environment for statistical computing. _R Foundation for Statistical Computing_,
+Vienna, Austria. ISBN 3-900051-07-0, URL http://www.R-project.org/
+
+
+*Kurt Hornik*. The R FAQ (2011). ISBN 3-900051-08-9, URL http://CRAN.R-project.org/doc/FAQ/R-FAQ.html
+
+
