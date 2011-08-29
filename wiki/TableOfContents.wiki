@@ -19,6 +19,7 @@
     * [UsingAnalogueR#Using_Analogues_with_R Using Analogues with R]
     * [CommandReference#Command_Reference Command Reference]
   * [AnaloguesArcGIS Using Analogues for ArcGIS]
+    * [ArgumentRange Analogue interface parameter values]
     * [AnaloguesAG93 ArcToolbox for ArcGIS 9.3.x]
     * [AnaloguesAG10 ArcToolbox for ArcGIS 10.x]
   * [Knowproblems Known problems]
