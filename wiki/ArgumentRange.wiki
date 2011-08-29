@@ -1,0 +1,4 @@
+#summary Permitted ranges in arguments
+#sidebar TableOfContents
+
+== What are the values that each argument of the `createParameters()` function can take? ==
