@@ -2,3 +2,32 @@
 #sidebar TableOfContents
 
 == What are the values that each argument of the `createParameters()` function can take? ==
+
+As this interface is provided with a limited amount of data, and also due to memory constraints and to avoid server failures, we provide a general overview of the values that each parameter in the interface can take. All these values are related with the `createParameters()` function, which is the `analogues` initialization function:
+
+|| *Arguments* || *Suggested range* ||
+|| x || Values between -180 and 180. Can be decimal, but ensure the combination `x,y` falls in land areas ||
+|| y || Values between -60 and 90. Can be decimal, but ensure the combination `x,y` falls within land areas ||
+|| method || Can *ONLY* be `"ccafs"` or `"hal"`, in lower case letters, and quoted. ||
+|| hal.rad || Vector of length 2 (`c(a,b)`), in which `a` will be taken for temperature and `b` for rainfall. Both positions can be set to `NA`, or can take any numeric value > 0 ||
+|| hal.mad || Vector of length 2 (`c(a,b)`), in which `a` will be taken for temperature and `b` for rainfall. Both positions can be set to `NA`, or can take any numeric value > 0 ||
+|| hal.mrd || Vector of length 2 (`c(a,b)`), in which `a` will be taken for temperature and `b` for rainfall. Both positions can be set to `NA`, or can take any numeric value > 0. Please, make sure that at least one of `hal.rad`, `hal.mad` and `hal.mrd` has at least one position with a value. ||
+|| z || Any value > 1. Please avoid very big (i.e. > 10) values ||
+|| scenario || First element *MUST* always be `"current"`, 2nd and following elements as with the example data: `a1b_2020_2049_bccr_bcm2_0`, `a1b_2020_2049_cccma_cgcm3_1_t47`, `a1b_2020_2049_cccma_cgcm3_1_t63`, `a1b_2020_2049_cnrm_cmr`, `a1b_2020_2049_csiro_mk3_0`, `a1b_2020_2049_csiro_mk3_5`  ||
+|| vars || Specify which variables are being used in the calculation (e.g. tmean, precipitation) ||
+|| weights || Specify how the variables are weighted. This can either be a rasterLayer or a single number. Provide a list with the name of the raster or a value for weighting. ||
+|| ndivision || Define how many devision the variables have per year (e.g. _for monthly data use 12_). ||
+|| climate_data || Define directory where the climate data is located ||
+|| ext || Extension of raster format (must be supported by gdal) ||
+|| direction || Which direction should the dissimilarity be calculated. Available options are forward, backward and current. ||
+|| growing_season || Define the growing season of the crop that is to be modelled. ||
+|| accross_year || Should the analogue method be looked accross years (i.e. should time lag be used to account for differences in seasons ||
+|| normalise || Should the rasater be normalised to a mean of 0 and sd of 1 when being loaded. ||
+|| keep_lag	 ||  Specify whether or not grids for each lag should be kept expressions evaluated in the context of df and then fed to order ||
+|| hal.rad || Maximum tolerable relative annual difference for hellegate method. A vector of length(vars), if variables should not be considered, substitute the number with NA. ||
+|| hal.mad || Maximum tollerable difference in annual precipitation. A vector of length(vars), if variables should not be considered, substitute the number with NA. ||
+|| hal.mrd || Mean absolute difference between months difference. A vector of length(vars), if variables should not be considered, substitute the number with NA. ||
+|| hal.ncond || Specify how many of the above condition need to be true in order that a sites is similiar. ||
+|| accross.year || Should the analogue method be looked accross years (i.e. should time lag be used to account for differences in seasons ||
+|| keepllag	|| Specify whether or not grids for each lag should be kept ||
+|| z || Exponent for ccafs dissimilarity, default is 2. ||
