@@ -16,7 +16,7 @@ As this interface is provided with a limited amount of data, and also due to mem
 || scenario || First element *MUST* always be `"current"`, 2nd and following elements as with the example data: `"a1b_2020_2049_bccr_bcm2_0"`, `"a1b_2020_2049_cccma_cgcm3_1_t47"`, `"a1b_2020_2049_cccma_cgcm3_1_t63"`, `"a1b_2020_2049_cnrm_cmr"`, `"a1b_2020_2049_csiro_mk3_0"`, `"a1b_2020_2049_csiro_mk3_5"`, `"a1b_2020_2049_gfdl_cm2_0"`, `"a1b_2020_2049_gfdl_cm2_1"`, `"a1b_2020_2049_giss_aom"`, `"a1b_2020_2049_giss_model_eh"`, `"a1b_2020_2049_giss_model_er"`, `"a1b_2020_2049_iap_fgoals1_0_g"`, `"a1b_2020_2049_ingv_echam4"`, `"a1b_2020_2049_inm_cm3_0"`, `"a1b_2020_2049_ipsl_cm4"`, `"a1b_2020_2049_miroc3_2_hires"`, `"a1b_2020_2049_miroc3_2_medres"`, `"a1b_2020_2049_miub_echo_g"`, `"a1b_2020_2049_mpi_echam5"`, `"a1b_2020_2049_mri_cgcm2_3_2a"`, `"a1b_2020_2049_ncar_ccsm3_0"`, `"a1b_2020_2049_ncar_pcm1"`, `"a1b_2020_2049_ukmo_hadcm3"`, `"a1b_2020_2049_ukmo_hadgem1"`  ||
 || vars || Can be `"tmean"`, `"prec"`, or `c("tmean","prec")` ||
 || weights || Can be `"dtr"` or any value. And *MUST* be equal length to `vars`. If `length(vars)=2` then `weights=c(1,1)`, or `weights=("dtr",1)` ||
-|| ndivisions || 12 ). ||
+|| ndivisions || 12 ||
 || env.data || Directory to server's climate data? Should not be an option to the user ||
 || ext || `".asc"`. Should not be an option to the user. ||
 || direction || One of three values: `"backward"`, `"forward"`, or `"none"` ||
