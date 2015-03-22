@@ -1,0 +1,165 @@
+﻿#summary Using Analogues as a stand-alone application
+
+# Using Analogues as a stand-alone application #
+
+If you are interested in running analogues tool in your own PC without conection to the internet, you can follow the next steps.
+Please note that all of the comments and pictures were generated using R for Windows.
+
+### What is R? ###
+
+R is a system for statistical computation and graphics. It consists of a language plus a run-time environment with graphics, a debugger,
+access to certain system functions, and the ability to run programs stored in script files.
+
+R has a home page at http://www.R-project.org/. It is free software distributed under a GNU-style copyleft,
+and an official part of the GNU project ('GNU S').
+
+### What is Analogues? ###
+
+Analogues is an R package to find climate analogues between a reference site and a number of other sites or a raster, within current or future climate.
+Analogues packages 0.0.5 was built using R version 2.12.1 (_under Unix/Ubuntu OS_), it was developed by Josh Hooker, Julian Ramirez and Johannes Signer from CIAT.
+
+The Analogue package offers a limited set of global climate data in ASCII format with 0.5 degree resolution
+for the monthly mean temperature (tmean), monthly temperature range (dtr) and the monthly precipitation (prec).
+The data is provided for current climate and for 24 GCMs of the SRES A1B for 2030.
+
+```
+Package: analogues
+Type: Package
+Title: Calculate climate analogues
+Version: 0.0.5
+Date: 2011-08-01
+Author: Josh Hooker, Julian Ramirez, Johannes Signer
+Maintainer: Johannes Signer (jmsigner at gmail dot com)
+Description: Calculate climate analogues
+License: GPL3
+LazyLoad: yes
+Collate: 'applyThreshold.R' 'ccafsMPointsPercentDiff.R'
+        'ccafsMPoints.R' 'ccafsPoint.R' 'createParameters.R'
+        'cropInteractive.R' 'dissimilarity.R' 'halMPoints.R'
+        'loadDataGrass.R' 'loadData.R' 'loadGridsFromFile.R'
+        'loadWeights.R' 'report.R' 'summary.R' 'util.R'
+Packaged: 2011-08-04 15:27:18 UTC; jsigner
+Built: R 2.12.1; ; 2011-08-04 15:27:19 UTC; unix
+```
+
+
+It contains more than 10 functions to allow users to calculate similarity of climate sites. Some of the main functions are:
+
+  1. _Apply thresholding to araster_
+  1. _Calculate ccafs dissimilarity between points with climate information_
+  1. _Initiate parameters for analogue dissimilarity analysis_
+  1. _Crop raster to a region of intrest_
+  1. _Computes distance between one reference point and one other points_
+  1. _Load data for the dissimilarity calculations_
+  1. _Extract reference values from rasters_
+  1. _Load seperate grids_
+  1. _Load weights for grids_
+  1. _Load weights from GRASS_
+  1. _Hallegatte Method_
+  1. _Create a report_
+
+
+## System Requirements ##
+
+Analogues runs under R environment, it means, that it could run on almost all current operaring systems as follow:
+
+  * Mcrosoft Windows
+  * UNIX platforms and similar systems (including FreeBSD and Linux)
+  * Mac OS
+
+R is being developed for the Unix-like, Windows and Mac families of operating systems. Support for Mac OS Classic ended with R 1.7.1.
+
+For details information about which machines are supported by R, please review
+[What machines does R run on?](http://cran.r-project.org/doc/FAQ/R-FAQ.html#What-machines-does-R-run-on_003f) article.
+
+
+**The steps in this document were tested using:**
+  * _Microsoft Windows 7 (32 bit)_
+  * _Core 2 Duo at 2.0 GHz_
+  * _2 GB RAM_
+  * _60GB + 1GB Swap file hard disk space_
+  * _DirectX 9.0c compatible video card_
+
+> _**R and Analogue plus dependences packages you need 104 Mb aprox. and for Climate data you must have 1.43 GB of free space.**_
+
+
+## Obtaining and Installing R for Windows ##
+
+The following guide use Microsoft Windows 7 as a default operaring system.
+
+### Obtaining R ###
+
+Go to any CRAN site using your favorite web browser (see http://cran.r-project.org/mirrors.html for a list), and choose a location close to you to minimize network load.
+Once you are in _the Comprehensive R Archive Network_ page, click on [Download R for Windows](http://cran.icesi.edu.co/CRAN/bin/windows/), then select base link
+to go to the binaries and click over [Download R 2.13.1 for Windows](http://cran.icesi.edu.co/CRAN/bin/windows/base/R-2.13.1-win.exe) link.
+If you are using a FTP site, navigate to the bin/windows/base directory and collect the file(s) you need.
+
+You also can download directly from [here](http://cran.icesi.edu.co/CRAN/bin/windows/base/R-2.13.1-win.exe). But if you want to check the package distribuited by R we suggest you go to the R website and
+download directly and get de [md5sum](http://en.wikipedia.org/wiki/Md5sum).
+
+> The current release is distributed as an installer ‘R-2.13.1-win.exe’ of about 39Mb. This contains all the components and allows as complete as installation as you choose.
+
+
+> _CRAN is a network of ftp and web servers around the world that store identical, up-to-date, versions of code and documentation for R._
+
+
+### Installing R for Windows ###
+
+Current binary versions of R run on Windows XP or later, including on 64-bit versions. The last version known to run on Windows 2000 was 2.12.2.
+
+```
+  We have only tested on versions of Windows currently supported by Microsoft, mainly 32-bit Windows 7 
+  and 64-bit Windows Server 2008.
+```
+
+Installation is via the installer R-2.13.1-win.exe. Just double-click on the icon and follow the instructions.
+When installing on a 64-bit version of Windows the options will include 32- or 64-bit versions of R (and the default is to install both).
+You can uninstall R from the Control Panel or from the (optional) R program group on the Start Menu.
+
+
+Double-click over the _R-2.13.1-win.exe_ file and follow the steps.
+
+
+[For further info](http://cran.icesi.edu.co/CRAN/bin/windows/base/README.R-2.13.1)
+
+[R for Windows FAQ](http://cran.r-project.org/bin/windows/base/rw-FAQ.html)
+
+
+## Obtaining and Installing Analogues for Windows ##
+
+### Obtaining Analogues package ###
+
+
+
+### Installing Analogues package ###
+
+There are two simple way to install Analogues package for R.
+
+The first one is using the following command in R:
+
+```
+install.packages("analogues_x.x.x.zip", repos="NULL")
+```
+
+The second one is using R windows interface as follow:
+
+  1. Select XXXXXXX from the Main menu
+  1. Click on XXXXXXXXX
+  1. Select the downloaded zip file
+  1. That's it!
+
+If you have any problems installing this package please go to the Analogues package home page.
+
+
+## Using Analogues with R ##
+
+Check out your R and Analogue installation using Basic Tutorials at [Using Analogues with R](http://code.google.com/p/webgis-analogues/wiki/UsingAnalogueR)
+
+
+
+---
+
+| [Español](http://code.google.com/p/webgis-analogues/wiki/Standalone?wl=es) |
+|:----------------------------------------------------------------------------|
+
+

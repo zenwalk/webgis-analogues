@@ -1,0 +1,20 @@
+﻿#summary Welcome to Analogue.
+#sidebar TableOfContents
+
+# Introduction #
+
+An R package to find climate analogues between a reference site and a number of other sites or a raster, within current or future climate.
+
+
+# Details #
+
+A traves de esta pagina usted encontrara informacion sobre:
+  * Estructura del Sistema **Analogue** or _WebGIS Analogue_
+  * Procedimiento de Instalacion
+  * Usando el Software
+
+
+---
+
+| [Español](http://code.google.com/p/webgis-analogues/wiki/Welcome?wl=es) |
+|:-------------------------------------------------------------------------|
